@@ -117,7 +117,15 @@ input[type=checkbox] { transform: scale(1.5);
   width: 60%;
   padding: 0px;
 }
-
+.userInfoColumn1{
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+.userInfoColumn2{
+	float: left;
+	width: 30%;
+}
 .columnCart1 {
   float: left;
   width: 25%;

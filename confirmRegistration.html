@@ -20,14 +20,14 @@
 	<span>Please confirm your account information</span>
 	<br>
 	<br>
-	<span>Hi John, is this you?</span>
+	<span>Hi <?php echo $_POST["txtFirstName"]; ?>, is this you?</span>
 	<br>
 	<br>
-	Name: John D. Smith
+	Name: <?php echo $_POST["txtFirstName"]; ?> <?php echo $_POST["txtMI"]; ?> <?php echo $_POST["txtLastName"]; ?>
 	<br>
-	Email: JDSmith49@yahoo.com
+	Email: <?php echo $_POST["txtEmail"]; ?>
 	<br>
-	Cincinnati, 45036
+	Location: <?php echo $_POST["txtCity"]; ?>, <?php echo $_POST["selectState"]; ?>
 	
 </div>
 

@@ -5,8 +5,8 @@
 <title>About Wellness</title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="AboutWellness.css" media="screen">
-<link rel="stylesheet" type="text/css" href="Register.css" media="screen">
-<!--<link rel="stylesheet" type="text/css" href="rankupprinter.css" media="print">-->
+<!--<link rel="stylesheet" type="text/css" href="Register.css" media="screen">-->
+
 </head>
 <body>
 <header>
@@ -18,23 +18,23 @@
 <h2>Welcome to About Wellness Ohio Register - Personal Information</h2>
 <br>
 <div>
-			<form>
-				<label for="txtFirstName">First Name:</label> <input type="text" id="txtFirstName" name="txtFirstName"><br><br>
-				<label for="txtMI">Middle Initial:</label> <input type="text" id="txtMI" name="txtMI"><br><br>
-				<label for="txtLastName">Last Name:</label> <input type="text" id="txtLastName" name="txtLastName"><br><br>
-				<label for="txtStreet">Street Address:</label> <input type="text" id="txtStreet" name="txtStreet"><br><br>
-				<label for="txtUnit">Apt/Suite/Unit:</label> <input type="text" id="txtUnit" name="txtUnit"><br><br>
-				<label for="txtCity">City:</label> <input type="text" id="txtCity" name="txtCity"><br><br>
-				<label for="selectState">State:</label>
+			<form action="confirmRegister.php" method="post">
+				<label for="txtFirstName" class="userInfoColumn1">First Name:&nbsp&nbsp</label> <input type="text" id="txtFirstName" name="txtFirstName" class="userInfoColumn2"><br><br>
+				<label for="txtMI" class="userInfoColumn1">Middle Initial:&nbsp&nbsp</label> <span class="userInfoColumn2"><input type="text" id="txtMI" name="txtMI" maxlength="4" size="4"></span><br><br>
+				<label for="txtLastName" class="userInfoColumn1">Last Name:&nbsp&nbsp</label> <input type="text" id="txtLastName" name="txtLastName" class="userInfoColumn2"><br><br>
+				<label for="txtStreet" class="userInfoColumn1">Street Address:&nbsp&nbsp</label> <input type="text" id="txtStreet" name="txtStreet" class="userInfoColumn2"><br><br>
+				<label for="txtUnit" class="userInfoColumn1">Apt/Suite/Unit:&nbsp&nbsp</label> <input type="text" id="txtUnit" name="txtUnit" class="userInfoColumn2"><br><br>
+				<label for="txtCity" class="userInfoColumn1">City:&nbsp&nbsp</label> <input type="text" id="txtCity" name="txtCity" class="userInfoColumn2"><br><br>
+				<label for="selectState" class="userInfoColumn1">State:&nbsp&nbsp</label>
 				<select id="selectState">
 					<option value="Ohio">Ohio</option>
 					<option value="Texas">Texas</option>
 					<option value="California">California</option>
 				</select><br><br>
-				<label for="txtZipCode">Zip Code:</label> <input type="text" id="txtZipCode" name="txtZipCode"><br><br>
-				<label for="txtPhone">Phone Number:</label> <input type="phone" id="txtPhone" name="txtPhone"><br><br>
-				<label for="txtEmail">Email:</label> <input type="email" id="txtEmail" name="txtEmail"><br><br>
-				<label for="radioContact">Best Contact:</label>
+				<label for="txtZipCode" class="userInfoColumn1">Zip Code:&nbsp&nbsp</label> <input type="text" id="txtZipCode" name="txtZipCode" class="userInfoColumn2"><br><br>
+				<label for="txtPhone" class="userInfoColumn1">Phone Number:&nbsp&nbsp</label> <input type="phone" id="txtPhone" name="txtPhone" class="userInfoColumn2"><br><br>
+				<label for="txtEmail" class="userInfoColumn1">Email:&nbsp&nbsp</label> <input type="email" id="txtEmail" name="txtEmail" class="userInfoColumn2"><br><br>
+				<label for="radioContact" class="userInfoColumn1">Best Contact:&nbsp&nbsp</label>
 				<div id="radioContact">
 					<label for="optionPhone" id="labelPhone">Phone</label>
 					<input type="radio" id="optionPhone" name="contact" value="Phone">
