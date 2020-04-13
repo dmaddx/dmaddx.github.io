@@ -18,7 +18,7 @@
 <h2>Welcome to About Wellness Ohio Register - Personal Information</h2>
 <br>
 <div>
-			<form action="confirmRegister.php" method="post">
+			<form>
 				<label for="txtFirstName" class="userInfoColumn1">First Name:&nbsp&nbsp</label> <input type="text" id="txtFirstName" name="txtFirstName" class="userInfoColumn2"><br><br>
 				<label for="txtMI" class="userInfoColumn1">Middle Initial:&nbsp&nbsp</label> <span class="userInfoColumn2"><input type="text" id="txtMI" name="txtMI" maxlength="4" size="4"></span><br><br>
 				<label for="txtLastName" class="userInfoColumn1">Last Name:&nbsp&nbsp</label> <input type="text" id="txtLastName" name="txtLastName" class="userInfoColumn2"><br><br>
@@ -49,7 +49,9 @@
 	<ul>
 		<li class="buttonli"></li>
 		<li class="buttonli"><button onclick="document.location = 'index.html'" class="clickherebutton">Home</button></li>
-		<li class="buttonli"><button onclick="document.location = 'medicalCard.html'" class="clickherebutton">Next</button></li>
+		<!--<li class="buttonli"><button onclick="document.location = 'medicalCard.html'" class="clickherebutton">Next</button></li>-->
+		<li class="buttonli"><button onclick="register()" class="clickherebutton">Next</button></li>
+
 	</ul>
 
 </div>
@@ -58,7 +60,19 @@
 <div class="warningfoot">
 	For security reasons, at any time you return to the Home Menu your account will be logged out of this tablet.
 </div>
-
+<script>
+	function register() {
+		var fName = document.getElementById("txtFirstName").value;
+		var midInt = document.getElementById("txtMI").value;
+		var lName = document.getElementById("txtLastName").value;
+		var email = document.getElementById("txtEmail").value;
+		var city = document.getElementById("txtCity").value;
+		var state = document.getElementById("selectState").value;
+		
+		window.location = "medicalCard.html";
+		
+	}
+</script>
 </main>
 <footer>
 	<div>Copyright &copy; About Wellness </div>

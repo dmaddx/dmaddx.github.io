@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <div class="maxtabletsize">
 <head>	
@@ -20,7 +21,20 @@
 	<span>Please confirm your account information</span>
 	<br>
 	<br>
-	<span>Hi <?php echo $_POST["txtFirstName"]; ?>, is this you?</span>
+	<script>
+	function register() {
+		var fName = document.getElementById("fName").value;
+		var midInt = document.getElementById("midInt").value;
+		var lName = document.getElementById("lName").value;
+		var email = document.getElementById("email").value;
+		var city = document.getElementById("city").value;
+		var state = document.getElementById("state").value;
+		document.write("Hi " + fName + ", is this you?");
+		}
+	</script>
+
+	<onload = "register()">
+	<span>Hi , is this you?</span>
 	<br>
 	<br>
 	Name: <?php echo $_POST["txtFirstName"]; ?> <?php echo $_POST["txtMI"]; ?> <?php echo $_POST["txtLastName"]; ?>
